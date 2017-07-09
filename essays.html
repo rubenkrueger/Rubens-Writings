@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruben's Website</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css" />
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Ruben's Writings</h1>
+        <ul>
+            <li><a href="ruben's%20website.html">About</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="text">
+        <h1>Explore my essays below!</h1>
+        <h3 style="font-weight: normal"><i>Check back again! More will be added.</i></h3>
+    </div>
+    <div class="leftButton" style="display: none">
+        <p id="button1" onmouseover="mouseOver1()" onmouseout="mouseOut1()" style="cursor:pointer; display:none">A Crisis of Conscious</p>
+    </div>
+    <div id="footer">
+        <div id="footertext">
+            Made by Ruben Krueger
+        </div>
+    </div>
+    </div>
+<script>
+    document.getElementById("button1").onclick = function () {
+        location.href = "A Crisis of Conscious.html";
+    };
+    function mouseOver1(){
+        document.getElementById("button1").innerHTML = "Category: Opinion";
+    }
+    function mouseOut1(){
+        document.getElementById("button1").innerHTML = "A Crisis of Conscious";
+    }
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button1").fadeIn(2000);
+        $(".leftButton").fadeIn(2000);
+    })
+
+</script>
+</body>
+</html>

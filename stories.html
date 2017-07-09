@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruben's Website</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css" />
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Ruben's Writings</h1>
+        <ul>
+            <li><a href="ruben's%20website.html">About</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="essays.html">Essays</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="text">
+        <h1>Explore my short stories below!</h1>
+        <h3 style="font-weight: normal"><i>Check back again! More will be added.</i></h3>
+    </div>
+    <div class="leftButton" style="display: none">
+        <p id="button1" onmouseover="mouseOver1()" onmouseout="mouseOut1()" style="cursor:pointer; display:none">Hyperion</p>
+    </div>
+    <div class="middleButton" style="display: none">
+        <p id="button2" onmouseover="mouseOver2()" onmouseout="mouseOut2()" style="cursor:pointer; display:none">Killing Me Softly</p>
+    </div>
+    <div class="middleButton" style="display: none">
+        <p id="button3" onmouseover="mouseOver3()" onmouseout="mouseOut3()" style="cursor:pointer; display:none">Skin Crawlers</p>
+    </div>
+    <div class="rightButton" style="display: none">
+        <p id="button4" onmouseover="mouseOver4()" onmouseout="mouseOut4()" style="cursor:pointer; display:none">Meditations</p>
+    </div>
+    <div id="footer">
+        <div id="footertext">
+            Made by Ruben Krueger
+        </div>
+    </div>
+</div>
+
+<script>
+        document.getElementById("button1").onclick = function () {
+        location.href = "Hyperion.html";
+        };
+        document.getElementById("button2").onclick = function () {
+            location.href = "Killing Me Softly.html";
+        };
+        document.getElementById("button3").onclick = function () {
+            location.href = "Skincrawlers.html";
+        };
+        document.getElementById("button4").onclick = function () {
+            location.href = "Meditations.html";
+        };
+        function mouseOver1(){
+            document.getElementById("button1").innerHTML = "Category: Sci-Fi";
+        }
+        function mouseOut1(){
+            document.getElementById("button1").innerHTML = "Hyperion";
+        }
+
+        function mouseOver2(){
+            document.getElementById("button2").innerHTML = "Category: Sci-Fi";
+        }
+        function mouseOut2(){
+            document.getElementById("button2").innerHTML = "Killing Me Softly";
+        }
+        function mouseOver3(){
+            document.getElementById("button3").innerHTML = "Category: Horror";
+        }
+
+        function mouseOut3(){
+            document.getElementById("button3").innerHTML = "Skin Crawlers";
+        }
+        function mouseOver4(){
+            document.getElementById("button4").innerHTML = "Category: Adventure";
+        }
+        function mouseOut4(){
+            document.getElementById("button4").innerHTML = "Meditations";
+        }
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button1").fadeIn(2000);
+        $("#button2").fadeIn(2000);
+        $("#button3").fadeIn(2000);
+        $("#button4").fadeIn(2000);
+        $(".leftButton").fadeIn(2000);
+        $(".middleButton").fadeIn(2000);
+        $(".rightButton").fadeIn(2000);
+    })
+
+</script>
+
+</body>
+</html>
